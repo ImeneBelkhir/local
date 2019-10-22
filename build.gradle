@@ -15,7 +15,6 @@ task BNP_test {
 	   price += orange_nb * orange_price;
 	   price += water_melon_nb.intdiv(3) * (water_melon_price*2) + water_melon_nb.mod(3) * water_melon_price;
 	   println "------------------------------------------";
-       println "le total des articles: "+price + " pounds";
-	 
+           println "le total des articles: "+price + " pounds";	 
 }
    
