@@ -1,0 +1,21 @@
+/***
+* le task se lance avec la commande 
+* gradle -q BNP_test -Papple_nb=4 -Porange_nb=3 -Pwater_melon_nb=5
+*/
+task BNP_test {   
+   	   def apple_price = 0.2;
+	   def orange_price = 0.5;
+	   def water_melon_price = 0.8;
+
+	   int apple_nb = Integer.parseInt("$apple_nb");
+	   int orange_nb = Integer.parseInt("$orange_nb");
+	   int water_melon_nb = Integer.parseInt("$water_melon_nb");
+	   
+	   double price = apple_nb.intdiv(2) * apple_price + apple_nb.mod(2) * apple_price;
+	   price += orange_nb * orange_price;
+	   price += water_melon_nb.intdiv(3) * (water_melon_price*2) + water_melon_nb.mod(3) * water_melon_price;
+	   println "------------------------------------------";
+       println "le total des articles: "+price + " pounds";
+	 
+}
+   
